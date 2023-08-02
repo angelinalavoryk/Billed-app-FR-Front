@@ -1,6 +1,5 @@
 
 export default () => {
-
   return(`
       <div class="page-div">
         <div class="row">
@@ -45,4 +44,12 @@ export default () => {
       </div>
   `)
 }
+
+
+
+
+
+
+
+
   

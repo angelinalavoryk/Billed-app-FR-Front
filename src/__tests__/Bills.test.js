@@ -117,57 +117,6 @@ describe("Given I am connected as an employee", () => {
     })
   })
 })
-
-
-
-
-
-// // test d'intégration GET
-//   describe("When an error occurs on API", () => {
-//     beforeEach(() => {
-//       jest.spyOn(mockStore, "bills")
-//       Object.defineProperty(
-//           window,
-//           "localStorage",
-//           { value: localStorageMock }
-//       )
-//       window.localStorage.setItem("user", JSON.stringify({
-//         type: "Employee",
-//         email: "a@a"
-//       }))
-//       const root = document.createElement("div")
-//       root.setAttribute("id", "root")
-//       document.body.appendChild(root)
-//       router()
-//     })
-//     // Vérifie si l'erreur 404 s'affiche bien
-//     test("Then fetches bills from an API and fails with 404 message error", async () => {
-//       mockStore.bills.mockImplementationOnce(() => {
-//         return {
-//           list : () =>  {
-//             return Promise.reject(new Error("Erreur 404"))
-//           }
-//         }})
-//       const html = BillsUI({ error: "Erreur 404" })
-//       document.body.innerHTML = html
-//       const message = await screen.getByText(/Erreur 404/)
-//       expect(message).toBeTruthy()
-//     })
-//   // Vérifie si l'erreur 500 s'affiche bien
-//     test("Then fetches messages from an API and fails with 500 message error", async () => {
-//       mockStore.bills.mockImplementationOnce(() => {
-//         return {
-//           list : () =>  {
-//             return Promise.reject(new Error("Erreur 500"))
-//           }
-//         }})
-//       const html = BillsUI({ error: "Erreur 500" })
-//       document.body.innerHTML = html
-//       const message = await screen.getByText(/Erreur 500/)
-//       expect(message).toBeTruthy()
-//     })
-//   })
-
 // test d'intégration GET 
 describe("When an error occurs on API", () => {
   beforeEach(() => {

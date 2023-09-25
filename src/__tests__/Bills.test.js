@@ -117,7 +117,11 @@ describe("Given I am connected as an employee", () => {
     })
   })
 })
-// test d'intégration GET 
+
+
+
+
+// Test d'intégration: GET 
 describe("When an error occurs on API", () => {
   beforeEach(() => {
     jest.spyOn(mockStore, "bills");

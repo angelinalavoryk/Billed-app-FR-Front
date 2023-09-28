@@ -91,6 +91,9 @@ describe("Given I am connected as an employee", () => {
 
 
 // Test d'intégration:  POST
+
+//vérifie la soumission d'un formulaire
+//cela entraîne un appel à la méthode "bills" du mockStore pour mettre à jour les factures.
 describe("When I am on NewBill Page and submit the form", () => {
   beforeEach(() => {
     jest.spyOn(mockStore, "bills");
